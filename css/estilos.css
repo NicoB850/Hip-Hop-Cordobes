@@ -1,0 +1,455 @@
+/* ESTILOS GENERALES */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-family: "Roboto", sans-serif;
+}
+
+h2 {
+  font-family: "Roboto", sans-serif;
+}
+
+p {
+  font-family: "Roboto", sans-serif;
+}
+
+a {
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background-color: whitesmoke;
+}
+
+.main-index {
+  grid-area: main;
+  width: 100%;
+  height: 85vh;
+}
+
+.main-artistas {
+  width: 100%;
+  height: 85vh;
+}
+
+.main-discos {
+  width: 100%;
+  height: 85vh;
+}
+
+.main-competencias {
+  width: 100%;
+  height: 85vh;
+}
+
+.main-gold {
+  width: 100%;
+  height: 85vh;
+}
+
+.main-sines {
+  width: 100%;
+  height: 85vh;
+}
+
+/* MEDIA QUERIES MOBILE */
+@media screen and (max-width: 1023px) {
+  /* .boton-menu {
+    display: block;
+  }
+
+  .nav-header {
+    position: absolute;
+    width: 70%;
+    margin-left: -70%;
+    transition: all 0.5s;
+  }
+
+  nav ul {
+    flex-direction: column;
+  }
+
+  nav li {
+    border-top: 1px solid #fff;
+  }
+
+  #boton-menu:checked ~ .nav-header {
+    margin: 0;
+  } */
+
+  /* INDEX MEDIA QUERIE MOBILE */
+
+  nav ul {
+    width: 1rem;
+  }
+  .footer {
+    display: none;
+  }
+
+  .contenido-principal {
+    display: none;
+  }
+
+  .div-mobile-sines {
+    display: flex;
+  }
+
+  .contenido-mobile-sines {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .sines-mobile {
+    width: 90%;
+    margin-left: 1.25rem;
+    margin-bottom: 2rem;
+  }
+
+  .titulo-princp-index {
+    text-align: center;
+  }
+
+  .formulario {
+    margin-left: 0.5rem;
+  }
+}
+
+/* MEDIA QUERIES PC */
+@media screen and (min-width: 1024px) {
+  .div-mobile-sines {
+    display: none;
+  }
+}
+
+/* HEADER */
+
+/* #boton-menu {
+  display: none;
+} */
+
+.hh-header {
+  background-image: url(../multimedia/img/logo-header.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  grid-area: header;
+}
+
+.titulo-header {
+  color: whitesmoke;
+}
+
+.header-span {
+  color: white;
+}
+
+.img-header {
+  width: 30px;
+  height: 30px;
+}
+
+.link-header {
+  color: white;
+  text-decoration: none;
+}
+
+.sublink_header {
+  background-color: black;
+  color: #fff;
+}
+
+nav {
+  display: flex;
+}
+
+nav a {
+  text-decoration: none;
+  color: inherit;
+  font-size: 14px;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+}
+
+nav li {
+  display: flex;
+  justify-content: center;
+  width: 150px;
+  height: 30px;
+  padding: 5px 10px;
+  background-color: rgba (255, 0, 0, 0.4);
+  border: 1px #000;
+  text-align: center;
+  color: #fff;
+  position: relative;
+}
+
+nav li:hover {
+  background-color: black;
+  color: #fff;
+}
+
+nav li > ul {
+  display: none;
+}
+
+nav li:hover > ul {
+  display: block;
+  position: absolute;
+  top: 30px;
+  left: 0px;
+}
+
+/* GRID */
+
+.body {
+  display: grid;
+  grid-template-areas:
+    "header header"
+    "main main"
+    "footer footer";
+}
+
+/* TITULAR */
+
+.tituloprincipal {
+  padding: 4px;
+  margin: 4px;
+  font-size: 2rem;
+}
+
+.texto-titulo {
+  padding: 4px;
+  margin: 4px;
+  font-size: 1rem;
+}
+
+.palabramarc1 {
+  font-weight: bold;
+  color: #000;
+}
+
+/* CONTENIDO DEL INDEX */
+
+.titulo-princp-index {
+  padding: 4px;
+  margin-top: 1rem;
+  margin-bottom: 2.5rem;
+  font-size: 1.7rem;
+}
+
+.logo-compe-sines {
+  padding: 5px 10px 5px 10px;
+  margin: 5px 92px 5px 26px;
+  width: 240px;
+  height: 240px;
+  float: left;
+  transition: 0.5s;
+  object-fit: contain;
+}
+
+.logo-compe-sines:hover {
+  transform: scale(1.1);
+}
+
+.logo-compe-gold {
+  padding: 5px 10px 5px 10px;
+  margin: 5px 92px 5px 26px;
+  width: 240px;
+  height: 240px;
+  transition: 0.5s;
+  object-fit: contain;
+}
+
+.logo-compe-gold:hover {
+  transform: scale(1.1);
+}
+
+.contenidosines {
+  font-size: 1rem;
+  display: block;
+  margin-left: 1.8rem;
+  margin-top: -2.8rem;
+  width: 30%;
+}
+
+.contenidogold {
+  font-size: 1rem;
+  display: block;
+  margin-left: 24rem;
+  margin-top: 0.1rem;
+  width: 30%;
+}
+.contenido-compes {
+  padding: 4px;
+  margin: 4px;
+}
+
+/* FOOTER */
+
+.footer {
+  grid-area: footer;
+  background-color: #000;
+  height: 4.3rem;
+}
+
+.div-footer {
+  display: flex;
+  width: 100%;
+}
+
+.img-footer {
+  width: 30px;
+  height: 100%;
+  margin-left: 15px;
+  margin-right: 20px;
+  margin-top: 20px;
+}
+
+.social-media-footer {
+  display: flex;
+  align-items: center;
+}
+
+.ig-icon {
+  height: 30px;
+  width: 25px;
+  margin-top: 20px;
+  margin-left: 15px;
+  margin-right: 4px;
+}
+
+.tw-icon {
+  height: 30px;
+  width: 25px;
+  margin-left: 15px;
+  margin-right: 4px;
+  margin-top: 22px;
+}
+
+.yt-icon {
+  height: 30px;
+  width: 25px;
+  margin-left: 15px;
+  margin-right: 4px;
+  margin-top: 22px;
+}
+
+.copy-footer {
+  margin-left: 38.1rem;
+  margin-top: 20px;
+  font-size: 1.4rem;
+  color: #fff;
+}
+
+/* CONTACTO */
+
+.contact_form {
+  width: 460px;
+  height: auto;
+  margin: 80px auto;
+  border-radius: 10px;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  background-color: #fbfbfb;
+  padding-left: 30px;
+}
+
+input {
+  background-color: #fbfbfb;
+  width: 408px;
+  height: 40px;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: grey;
+  margin-top: 10px;
+  padding-left: 10px;
+  margin-bottom: 20px;
+}
+
+textarea {
+  background-color: #fbfbfb;
+  width: 405px;
+  height: 150px;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: grey;
+  margin-top: 10px;
+  padding-left: 10px;
+  margin-bottom: 20px;
+  padding-top: 15px;
+}
+
+label {
+  display: block;
+  float: center;
+}
+
+button {
+  height: 45px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  text-transform: uppercase;
+  background-color: black;
+  border-color: grey;
+  border-style: solid;
+  border-radius: 10px;
+  width: 420px;
+  cursor: pointer;
+}
+
+button p {
+  color: #fff;
+}
+
+span {
+  color: grey;
+}
+
+.aviso {
+  font-size: 13px;
+  color: #0e0e0e;
+}
+
+h1 {
+  font-size: 39px;
+  text-align: left;
+  padding-bottom: 20px;
+}
+
+h3 {
+  font-size: 16px;
+  padding-bottom: 30px;
+  color: #0e0e0e;
+}
+
+p {
+  font-size: 14px;
+  color: #0e0e0e;
+}
+
+.formulario input:focus {
+  outline: 0;
+  border: 1px solid #97d848;
+}
+
+.formulario textarea:focus {
+  outline: 0;
+  border: 1px solid #97d848;
+}
+
+.formulario1 {
+  color: black;
+}
