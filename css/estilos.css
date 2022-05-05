@@ -26,35 +26,34 @@ body {
   background-color: whitesmoke;
 }
 
-.main-index {
+/* .main-index {
   grid-area: main;
   height: 85vh;
-}
+} */
 
 /* .main-artistas {
   width: 100%;
   height: 85vh;
-}
+} */
 
 .main-discos {
-  width: 100%;
-  height: 85vh;
+  height: 40rem;
 }
 
-.main-competencias {
-  width: 100%;
-  height: 85vh;
-}
-
-.main-gold {
-  width: 100%;
-  height: 85vh;
-}
-
-.main-sines {
+/* .main-competencias {
   width: 100%;
   height: 85vh;
 } */
+
+/* .main-gold {
+  width: 100%;
+  height: 85vh;
+} */
+
+/* .main-sines {
+  width: 100%;
+  height: 85vh;
+}  */
 
 /* MEDIA QUERIES MOBILE */
 @media screen and (max-width: 1023px) {
@@ -86,6 +85,7 @@ body {
   nav ul {
     width: 1rem;
   }
+
   .footer {
     display: none;
   }
@@ -166,49 +166,51 @@ header {
 
 /* CONTENIDO DEL INDEX */
 
-.titulo-princp-index {
-  padding: 4px;
-  margin-top: 1rem;
-  margin-bottom: 2.5rem;
-  font-size: 1.7rem;
+.logos-compes {
+  display: flex;
+  flex-direction: row;
 }
 
-.logo-compe-sines {
-  padding: 5px 10px 5px 10px;
-  margin: 5px 92px 5px 26px;
-  width: 240px;
-  height: 240px;
-  float: left;
+.logo-sines img {
+  width: 220px;
+  height: 220px;
+  margin-left: 16.8rem;
+  border-radius: 130px;
+  transition: transform .2s;
 }
 
-.logo-compe-gold {
-  padding: 5px 10px 5px 10px;
-  margin: 5px 92px 5px 26px;
-  width: 240px;
-  height: 240px;
+.logo-sines img:hover {
+  transform: scale(1.1);
+  box-shadow: 8px 8px 12px #000;
 }
 
-.contenidosines {
-  font-size: 1rem;
-  display: block;
-  margin-left: 1.8rem;
-  margin-top: -2.8rem;
-  width: 30%;
+.logo-gold img {
+  width: 220px;
+  height: 220px;
+  margin-left: 16.8rem;
+  border-radius: 130px;
+  transition: transform .2s;
 }
 
-.contenidogold {
-  font-size: 1rem;
-  display: block;
-  margin-left: 24rem;
-  margin-top: 0.1rem;
-  width: 30%;
+.logo-gold img:hover {
+  transform: scale(1.1);
+  box-shadow: 8px 8px 12px #000;
 }
-.contenido-compes {
-  padding: 4px;
-  margin: 4px;
+
+.texto-sines {
+  margin-top: 2rem;
+  margin-left: 15rem;
+  text-align: center;
+}
+
+.texto-gold {
+  margin-top: 2rem;
+  margin-left: 15rem;
+  text-align: center;
 }
 
 /* FOOTER */
+
 footer {
   grid-area: footer;
 }
@@ -217,62 +219,14 @@ footer p {
   color: white;
 }
 
-/* .footer {
-  grid-area: footer;
-  background-color: #000;
-  height: 4.3rem;
-} */
-
-/* .div-footer {
-  display: flex;
-  width: 100%;
-} */
-
-/* .img-footer {
-  width: 30px;
-  height: 100%;
-  margin-left: 15px;
-  margin-right: 20px;
-  margin-top: 20px;
-} */
-
-/* .social-media-footer {
-  display: flex;
-  align-items: center;
-} */
-
-/* .ig-icon {
-  height: 30px;
-  width: 25px;
-  margin-top: 20px;
-  margin-left: 15px;
-  margin-right: 4px;
-} */
-
-/* .tw-icon {
-  height: 30px;
-  width: 25px;
-  margin-left: 15px;
-  margin-right: 4px;
-  margin-top: 22px;
-} */
-
-/* .yt-icon {
-  height: 30px;
-  width: 25px;
-  margin-left: 15px;
-  margin-right: 4px;
-  margin-top: 22px;
-} */
-
-/* .copy-footer {
-  margin-left: 38.1rem;
-  margin-top: 20px;
-  font-size: 1.4rem;
-  color: #fff;
-} */
-
 /* CONTACTO */
+
+.main-contacto {
+  background-image: url(../multimedia/img/concierto1.jpg);
+  background-size: cover;
+  height: 140vh;
+  margin-top: -5rem
+}
 
 .contact_form {
   width: 460px;
@@ -374,4 +328,97 @@ p {
 
 .formulario1 {
   color: black;
+}
+
+
+/* CONTENIDO DE DISCOS */
+
+.main-discos {
+  background-image: url(../multimedia/img/concierto1.jpg);
+  background-size: cover;
+}
+
+.carousel1 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  height: 600px;
+  width: 600px;
+}
+
+.carousel-inner1 {
+  border-radius: 30px;
+  border-color: #fff;
+  border-style: solid;
+}
+
+/* CONTENIDO DE SINESCRITURA */
+
+.img-princ-sines {
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
+}
+
+.img-princ-sines img {
+  border-radius: 2rem;
+}
+
+.titulo-princ-sines {
+  padding-top: 0.8rem;
+  text-align: center;
+}
+
+.subtitulo-princ-sines {
+  text-align: center;
+}
+
+.texto-princ-inicio-sines {
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
+  text-align: center;
+}
+
+.video-sines-1 {
+  padding-left: 0.5rem;
+}
+
+.texto-princ-desarrollo-sines {
+  padding-top: 0.8rem;
+  text-align: center;
+}
+
+/* CONTENIDO DE GOLD RHYMES */
+
+.img-princ-gold {
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
+}
+
+.img-princ-gold img {
+  border-radius: 2rem;
+  height: 500px;
+  width: 1211px;
+}
+
+.titulo-princ-gold {
+  padding-top: 0.8rem;
+  text-align: center;
+}
+
+.subtitulo-princ-gold {
+  text-align: center;
+}
+
+.texto-princ-inicio-gold {
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
+  text-align: center;
+}
+
+.video-gold-1 {
+  padding-left: 0.5rem;
+}
+
+.texto-princ-desarrollo-gold {
+  padding-top: 0.8rem;
+  text-align: center;
 }
