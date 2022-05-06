@@ -1,161 +1,291 @@
 <!DOCTYPE html>
 <html lang="es">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="../css/estilos.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
-        <link rel="shortcut icon" href="../multimedia/img/logoimage.ico">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-        <script src="https://kit.fontawesome.com/c22720ca2d.js" crossorigin="anonymous"></script>
-        <title>Artistas</title>
-    </head>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/estilos.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" href="../multimedia/img/logoimage.ico">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <script src="https://kit.fontawesome.com/c22720ca2d.js" crossorigin="anonymous"></script>
+  <title>Artistas</title>
+</head>
 
 <body>
-    <header>
-        <nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="#"><img class="img-header" src="../multimedia/img/HipHopCordobes-Logo.png" alt="img-header"></a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="./artistas.html">Artistas</a>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Competencias
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <li><a class="dropdown-item" href="./compes-sinescritura.html">Sinescritura</a></li>
-                      <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item" href="./compes-goldrhymes.html">Gold Rhymes</a></li>
-                    </ul>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="./discos.html">Discos</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="./contacto.html">Contacto</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </nav>
-    </header>
-    <main class="main-artistas">   
-        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-indicators">
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-            </div>
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="../multimedia/img/Mecha-2.jpg" class="d-block" alt="mecha-1" width="1366px" height="560px">
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>Mecha Maturin</h5>
-                  <p class="text-white">Freestyler originario de Carlos Paz, uno de los maximos exponentes argentinos a nivel internacional.</p>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <img src="../multimedia/img/Naista-1.jpg" class="d-block" alt="naista-1" width="1366px" height="560px">
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>Naista</h5>
-                  <p class="text-white">Freestyler originario de Córdoba Capital, uno de los maximos exponentes cordobeses a nivel nacional.</p>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <img src="../multimedia/img/Larrix-1.jpg" class="d-block" alt="mecha-1" width="1366px" height="560px">
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>Larrix</h5>
-                  <p class="text-white">Freestyler originario de Córdoba Capital, uno de los maximos exponentes cordobeses a nivel nacional.</p>
-                </div>
-              </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div>
-    </main>
-    <footer class="bg-dark text-white pt-5 pb-4">
-        <div class="container text-center text-md-left">
-            <div class="row text-center text-md-left">
-                <div class="cold-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
-                    <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Hip-Hop Cordobés</h5>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi, explicabo labore laudantium laboriosam recusandae, suscipit consectetur maiores repellendus mollitia beatae sunt, voluptate placeat corrupti cupiditate neque optio delectus! Eius, eos?</p>
-                </div>
-                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
-                    <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Secciones</h5>
-                    <p>
-                        <a href="../index.html" class="text-white" style="text-decoration: none;"> Inicio</a>
-                    </p>
-                    <p>
-                        <a href="./artistas.html" class="text-white" style="text-decoration: none;"> Artistas</a>
-                    </p>
-                    <p>
-                        <a href="./discos.html" class="text-white" style="text-decoration: none;">Discos</a>
-                    </p>
-                    <p>
-                        <a href="./contacto.html" class="text-white" style="text-decoration: none;"> Contacto</a>
-                    </p>
-                </div>
-                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
-                    <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Contacto</h5>
-                    <p>
-                        <i class="fas fa-home mr-3">Cordoba, CBA 5000, ARG</i>
-                    </p>
-                    <p>
-                        <i class="fas fa-envelope mr-3">vilmusica8@gmail.com</i>
-                    </p>
-                    <p>
-                        <i class="fas fa-phone mr-3">3512074232</i>
-                    </p>
-                </div>
-            </div>
-            <hr class="mb-4">
-            <div class="row align-items-center">
-                <div class="col-md-7 col-lg-8">
-                    <p>Copyright ©2022 All rights reserved by: <a href="#" style="text-decoration: none;">
-                        <strong class="text-warning">Nicolas Bustos</strong>
-                    </a></p>
-                </div>
-                <div class="col-md-5 col-lg-4">
-                    <div class="text-center text-md-right">
-                        <ul class="list-unstyled list-inline">
-                            <li class="list-inline-item">
-                                <a href="https://www.facebook.com/nico.bustos.50/" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i class="fab fa-facebook"></i></a>
-                            </li>
-                            <li class="list-inline-item">
-                                <a href="https://twitter.com/NicoB850" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i class="fab fa-twitter"></i></a>
-                            </li>
-                            <li class="list-inline-item">
-                                <a href="https://www.instagram.com/bustos.nico/" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i class="fab fa-instagram"></i></a>
-                            </li>
-                            <li class="list-inline-item">
-                                <a href="https://www.youtube.com/channel/UCDFG12UilqJrYOvC4twSLtg" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i class="fab fa-youtube"></i></a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img class="img-header" src="../multimedia/img/HipHopCordobes-Logo.png"
+            alt="img-header"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./artistas.html">Artistas</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Competencias
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="./compes-sinescritura.html">Sinescritura</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="./compes-goldrhymes.html">Gold Rhymes</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./discos.html">Discos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./contacto.html">Contacto</a>
+            </li>
+          </ul>
         </div>
-    </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+      </div>
+    </nav>
+  </header>
+  <main class="main-artistas">
+    <!-- CAROUSEL PC -->
+    <div class="carousel-pc">
+      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="../multimedia/img/Mecha-2.jpg" class="d-block carrousel-img-pc" alt="mecha-1" width="1366px"
+              height="560px">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Mecha Maturin</h5>
+              <p class="text-white">Freestyler originario de Carlos Paz, uno de los maximos exponentes argentinos a
+                nivel internacional.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="../multimedia/img/Naista-1.jpg" class="d-block carrousel-img-pc" alt="naista-1" width="1366px"
+              height="560px">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Naista</h5>
+              <p class="text-white">Freestyler originario de Córdoba Capital, uno de los maximos exponentes cordobeses a
+                nivel nacional.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="../multimedia/img/Larrix-1.jpg" class="d-block carrousel-img-pc" alt="larrix-1" width="1366px"
+              height="560px">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Larrix</h5>
+              <p class="text-white">Freestyler originario de Córdoba Capital, uno de los maximos exponentes cordobeses a
+                nivel nacional.</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- CAROUSEL MOBILE -->
+    <div class="carousel-mobile">
+      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="../multimedia/img/Mecha-1-Mobile.jpg" class="d-block carousel-img-mobile" alt="mecha-1-mobile">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Mecha Maturin</h5>
+              <p class="text-white">Freestyler originario de Carlos Paz, uno de los maximos exponentes argentinos a
+                nivel internacional.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="../multimedia/img/naista-1-mobile.png" class="d-block carousel-img-mobile" alt="naista-1-mobile">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Naista</h5>
+              <p class="text-white">Freestyler originario de Córdoba Capital, uno de los maximos exponentes cordobeses a
+                nivel nacional.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="../multimedia/img/Larrix-1-Mobile.jpg" class="d-block carousel-img-mobile" alt="larrix-1-mobile">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Larrix</h5>
+              <p class="text-white">Freestyler originario de Córdoba Capital, uno de los maximos exponentes cordobeses a
+                nivel nacional.</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- CAROUSEL TABLET -->
+
+    <div class="carousel-tablet">
+      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="../multimedia/img/Mecha-1-Tablet.jpg" class="d-block carousel-img-tablet" alt="mecha-1-mobile">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Mecha Maturin</h5>
+              <p class="text-white">Freestyler originario de Carlos Paz, uno de los maximos exponentes argentinos a
+                nivel internacional.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="../multimedia/img/naista-1-tablet.png" class="d-block carousel-img-tablet" alt="naista-1-mobile">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Naista</h5>
+              <p class="text-white">Freestyler originario de Córdoba Capital, uno de los maximos exponentes cordobeses a
+                nivel nacional.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="../multimedia/img/larrix-1-tablet.jpeg" class="d-block carousel-img-tablet" alt="larrix-1-mobile">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Larrix</h5>
+              <p class="text-white">Freestyler originario de Córdoba Capital, uno de los maximos exponentes cordobeses a
+                nivel nacional.</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </main>
+
+  <footer class="bg-dark text-white pt-5 pb-4">
+    <div class="container text-center text-md-left">
+      <div class="row text-center text-md-left">
+        <div class="cold-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+          <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Hip-Hop Cordobés</h5>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi, explicabo labore laudantium laboriosam
+            recusandae, suscipit consectetur maiores repellendus mollitia beatae sunt, voluptate placeat corrupti
+            cupiditate neque optio delectus! Eius, eos?</p>
+        </div>
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+          <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Secciones</h5>
+          <p>
+            <a href="../index.html" class="text-white" style="text-decoration: none;"> Inicio</a>
+          </p>
+          <p>
+            <a href="./artistas.html" class="text-white" style="text-decoration: none;"> Artistas</a>
+          </p>
+          <p>
+            <a href="./discos.html" class="text-white" style="text-decoration: none;">Discos</a>
+          </p>
+          <p>
+            <a href="./contacto.html" class="text-white" style="text-decoration: none;"> Contacto</a>
+          </p>
+        </div>
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+          <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Contacto</h5>
+          <p>
+            <i class="fas fa-home mr-3">Cordoba, CBA 5000, ARG</i>
+          </p>
+          <p>
+            <i class="fas fa-envelope mr-3">vilmusica8@gmail.com</i>
+          </p>
+          <p>
+            <i class="fas fa-phone mr-3">3512074232</i>
+          </p>
+        </div>
+      </div>
+      <hr class="mb-4">
+      <div class="row align-items-center">
+        <div class="col-md-7 col-lg-8">
+          <p>Copyright ©2022 All rights reserved by: <a href="#" style="text-decoration: none;">
+              <strong class="text-warning">Nicolas Bustos</strong>
+            </a></p>
+        </div>
+        <div class="col-md-5 col-lg-4">
+          <div class="text-center text-md-right">
+            <ul class="list-unstyled list-inline">
+              <li class="list-inline-item">
+                <a href="https://www.facebook.com/nico.bustos.50/" class="btn-floating btn-sm text-white"
+                  style="font-size: 23px;"><i class="fab fa-facebook"></i></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="https://twitter.com/NicoB850" class="btn-floating btn-sm text-white"
+                  style="font-size: 23px;"><i class="fab fa-twitter"></i></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="https://www.instagram.com/bustos.nico/" class="btn-floating btn-sm text-white"
+                  style="font-size: 23px;"><i class="fab fa-instagram"></i></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="https://www.youtube.com/channel/UCDFG12UilqJrYOvC4twSLtg"
+                  class="btn-floating btn-sm text-white" style="font-size: 23px;"><i class="fab fa-youtube"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>
