@@ -1,0 +1,19 @@
+{
+  "name": "13",
+  "version": "1.0.0",
+  "description": "aplicando sass",
+  "main": "index.js",
+  "scripts": {
+    "start": "sass ./css/estilos.scss ./css/estilos.css -w --no-source-map -s compressed"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NicoB850/Hip-Hop-Cordobes.git"
+  },
+  "author": "Nicolas Bustos",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NicoB850/Hip-Hop-Cordobes/issues"
+  },
+  "homepage": "https://github.com/NicoB850/Hip-Hop-Cordobes#readme"
+}
