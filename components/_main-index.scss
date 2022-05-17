@@ -17,38 +17,14 @@
   flex-direction: row;
 }
 .logo-sines {
-  img {
-    width: 220px;
-    height: 220px;
-    margin-left: 16.8rem;
-    border-radius: 130px;
-    transition: transform 0.2s;
-    &:hover {
-      transform: scale(1.1);
-      box-shadow: 8px 8px 12px #000;
-    }
-  }
+  @extend .logoindexTemplate;
 }
 .logo-gold {
-  img {
-    width: 220px;
-    height: 220px;
-    margin-left: 16.8rem;
-    border-radius: 130px;
-    transition: transform 0.2s;
-    &:hover {
-      transform: scale(1.1);
-      box-shadow: 8px 8px 12px #000;
-    }
-  }
+  @extend .logoindexTemplate;
 }
 .texto-sines {
-  margin-top: 2rem;
-  margin-left: 15rem;
-  text-align: center;
+  @extend .textoindexTemplate;
 }
 .texto-gold {
-  margin-top: 2rem;
-  margin-left: 15rem;
-  text-align: center;
+  @extend .textoindexTemplate;
 }

@@ -1,27 +1,25 @@
 .img-princ-sines {
-  padding-top: 0.8rem;
-  padding-bottom: 0.8rem;
+  @include texto-compes (padding);
   img {
     border-radius: 2rem;
   }
 }
 .titulo-princ-sines {
   h1 {
-    text-align: center;
+    text-align: map-get($texto-estilos, centro);
   }
 }
 .subtitulo-princ-sines {
-  text-align: center;
+  text-align: map-get($texto-estilos, centro);
 }
-.texto-princ-inicio-sines {
-  padding-top: 0.8rem;
-  padding-bottom: 0.8rem;
-  text-align: center;
+.texto-princ-inicio-compes {
+  @include texto-compes (padding);
+  text-align: map-get($texto-estilos, centro);
 }
 .video-sines-1 {
   padding-left: 0.5rem;
 }
 .texto-princ-desarrollo-sines {
   padding-top: 0.8rem;
-  text-align: center;
+  text-align: map-get($texto-estilos, centro);
 }

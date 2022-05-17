@@ -8,17 +8,16 @@
   }
 }
 .subtitulo-princ-gold {
-  text-align: center;
+  text-align: map-get($texto-estilos, centro);
 }
-.texto-princ-inicio-gold {
-  padding-top: 0.8rem;
-  padding-bottom: 0.8rem;
-  text-align: center;
+.texto-princ-inicio-compes {
+  @include texto-compes (padding);
+  text-align: map-get($texto-estilos, centro);
 }
 .video-gold-1 {
   padding-left: 0.5rem;
 }
 .texto-princ-desarrollo-gold {
   padding-top: 0.8rem;
-  text-align: center;
+  text-align: map-get($texto-estilos, centro);
 }
