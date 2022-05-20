@@ -4,11 +4,7 @@
     border-radius: 2rem;
   }
 }
-.titulo-princ-sines {
-  h1 {
-    text-align: map-get($texto-estilos, centro);
-  }
-}
+
 .subtitulo-princ-sines {
   text-align: map-get($texto-estilos, centro);
 }
